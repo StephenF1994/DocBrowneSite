@@ -1,0 +1,603 @@
+
+
+
+html, body{
+	max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    font-family: futura;
+    text-align: center;
+    margin: 0;
+    color: #353535;
+    line-height: 130%;
+
+    
+}
+
+ul {
+ 	
+ 	
+ 	width: 100%;
+ 	position: relative;
+ 	bottom: 22%;
+}
+
+li{
+ 	display: inline-block;
+ 	margin-left: 3%;
+ 	margin-right: 3%;
+ 	font-size: 120%;
+ }
+ a{
+ 	text-decoration: none;
+ 	color: #353535
+ }
+ p{
+ 	font-family: 'IBM Plex Serif', serif;
+ }
+button{
+	
+	margin-top: 5%;
+	background-color: #42f4a1;
+	border-radius: 10px;
+	height: 50px;
+	width: 120px;
+	 color: #353535;
+	font-size: 110%;
+	box-shadow: none;
+
+}
+
+/* index page */
+/* Name Heading top of all pages*/
+#index-header{
+	background-color: white;
+	height: 140px;
+	border : solid 1px rgba(0,0,0,0.2);
+}
+#index-header h1{
+	position: relative;
+	top: 30%;
+	
+	font-size: 300%;
+	font-style: bold;
+}
+
+/* navigation on all pages*/
+#nav{
+ 	height: 35px;
+ 	padding-top: 2%;
+ 	background-color: white;
+ 	border-top: solid 1px #42f4a1;
+ 	margin-bottom: 5%;
+ }
+
+
+/*	Intro to the site*/
+
+#index-introduction{
+	background-color: #42f4a1;  /*Green box*/
+	height: 400px;
+}
+ #intro-text {/*Floated left*/
+
+	width: 30%;
+	font-size: 120%;
+	float: left;
+	padding-top: 6%;
+	padding-left: 10%;
+	margin-left: 5%;
+}
+#intro-text h2{
+	margin-bottom: 8%;
+	font-size: 180%;
+	line-height: 120%;
+}
+#doc-img{/*Floated right*/
+	
+	height: 400px;
+	width: 400px;
+	float: right;
+	margin-right: 10%;
+	
+	margin-bottom: 0;
+}
+
+
+
+
+/*Class for the lower navigation menu on home page*/
+.home-div{
+	height: 500px;
+	font-size: 110%;
+	margin-top: 0;
+	
+}
+.home-div p{
+padding-top: 15%;
+margin-left: 25%;
+width: 50%;
+text-align: center;
+font-size: 180%;
+line-height: 120%;
+}
+/*Container too clear floated items above*/
+#lower-container{
+clear: both;
+text-align: center;
+margin-top:0;
+}
+#index-gallery-link{
+	margin-top: 0;
+	}
+
+#index-contact-link{
+	background-color: #e8e8e8;
+	}
+
+#index-donate-link{
+	margin-top: 0;
+}
+
+#footer{
+	border-top: solid 1px #42f4a1;
+}
+
+
+
+
+
+
+
+
+/* Story*/
+/* Encourage user to scroll down and will bring them to bottom of page if clicked*/
+#scroll-down-button p{
+font-size: 140%;
+margin-bottom: 3%;
+}
+#scroll-down-button h2{
+font-size: 200%;
+margin-bottom: 3%;
+
+}
+
+/* Classes for div that tells the story*/
+
+.Box{
+	text-align: center;
+	height: 500px;
+	margin-bottom: 20px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	margin-top: 25%;
+}
+.Box p{
+	width: 60%;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 4%;
+	font-size: 120%;
+	 font-family: 'IBM Plex Serif', serif;
+}
+.Box h1{
+	
+	font-size: 250%;
+}
+ 
+ #firstBox{/*This will show on page load while other divs are hidden*/
+	display: block;
+}
+
+.car{
+	height: 100px;
+	width: 10%;
+	position: relative;
+	left: 5%;
+	top: 300px;
+}
+.story-button{
+	height: 50px;
+	width: 150px;
+	background-color: #42f4a1;
+	margin-top: 0;
+	margin-bottom: 0; 
+
+	}
+.car-animate{
+	width: 100px;
+    height: 100px;
+    
+    position: relative;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+}
+ @keyframes example {
+    0%   {left:0px; top:300px;}
+    100% { left:80%; top:300px;}
+}
+#footer-story{
+	
+	position: absolute;
+	top: 1500px;
+	width: 100%;
+	margin-top: 2%;
+	border-top: solid 1px #42f4a1;
+}
+
+
+
+
+
+
+/* Gallery */
+#learn-more{
+	font-size: 120%;
+	margin-bottom: 5%;
+}
+#gallery{
+	width: 100%;
+	background-color: white;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr; /* 2 images are displayed on each row of equal width(2fr) They are seperated with a gutter half their size.(1fr)*/
+	grid-template-rows:300px 300px;
+	overflow: hidden;
+	
+}
+
+.Gallery-menu{
+	width: 100%;
+	height: 300px;
+
+}
+
+#gallery-img-one{
+
+grid-row:1 /  2;
+grid-column:1 / 2 ;
+text-align: center;
+
+}
+#gallery-img-two{
+grid-row:1 /  2;
+grid-column:2 / 3;
+text-align: center;
+
+}
+#gallery-img-three{
+grid-row:1 / 2;
+grid-column:3 / 4;
+text-align: center;
+
+}
+
+#gallery-img-four{
+grid-row:2 /  3;
+grid-column:1 / 2;
+text-align: center;
+
+}
+
+#gallery-img-five{
+grid-row:2 /  3;
+grid-column:2 / 3;
+text-align: center;
+
+}
+
+#gallery-img-six{
+grid-row:2 /  3;
+grid-column:3 / 4;
+text-align: center;
+
+}
+
+#image-pos-1{
+	position: relative;
+	top: 0;
+
+}
+#image-pos-2{
+	position: relative;
+	top: 0;
+	
+}
+#image-pos-3{
+	position: relative;
+	top: 0;
+	
+}
+#image-pos-4{
+	position: relative;
+	top: 0;
+	
+}
+#image-pos-5{
+	position: relative;
+	top: 0;
+	
+}
+#image-pos-6{
+	position: relative;
+	top: 0;
+	
+}
+
+
+
+#overlay-one{
+	position: relative;
+	top: -303px;
+	text-align: center;
+    width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    
+}
+
+#overlay-one:hover{
+    background-color: rgba(0,0,0,0.2);
+
+
+}
+
+#overlay-two{
+	position: relative;
+	top: -303px;
+    
+    width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+#overlay-two:hover{
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+#overlay-three{
+	position: relative;
+	top: -303px;
+     width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+#overlay-three:hover{
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+#overlay-four{
+	position: relative;
+	top: -303px;
+     width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+#overlay-four:hover{
+     background-color: rgba(0,0,0,0.2);
+
+}
+
+#overlay-five{
+	position: relative;
+	top: -303px;
+     width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+#overlay-five:hover{
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+#overlay-six{
+	position: relative;
+	top: -303px;
+     width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+#overlay-six:hover{
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+
+
+#lightbox{/*Background when photo is clicked*/
+	width: 100%;
+	height: 106.5%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+#lightbox img /*Larger image when photo is clicked*/{
+	width: 50%;
+	height: 44%;
+	border:solid black 10px;
+	margin-top: 10%;
+
+}
+
+.lightbox-text{
+	display: none;
+}
+
+
+/*Contact*/
+
+#contact-box{
+	margin-bottom: 5%;
+	font-size: 140%;
+}
+#message{
+	
+	width: 40%;
+	margin-top: 10%;
+	margin: 0 auto;
+}
+
+input[type=text]{
+	width: 100%;
+    padding: 10px ;
+ 	margin-bottom: 
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+	width: 100%;
+    padding: 10px ;
+  
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Donate */
+
+#donate-div{
+	margin-top: 5%;
+	font-size: 120%;
+	
+	text-align: center;
+}
+
+#donate-div h2{
+	font-size: 160%;
+
+}
+
+#donate-div p h2{
+	margin: 2% 25% 0 25%;
+	padding:2%;
+	width: 50%;
+
+}
+
+
+
+#donate-button{
+	background-color: #42f4a1;
+	border-radius: 10px;
+	height: 50px;
+	width: 120px;
+	 color: #353535;
+	font-size: 110%;
+	box-shadow: none;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  
+
+
+#index-header h1{
+font-size: 150%;
+
+  }
+
+#nav a{
+  	font-size: 75%;
+  	margin-bottom: 0;
+  }
+
+
+#doc-img{
+	display: none;
+}
+
+#intro-text{
+  	width: 80%;
+  	font-size: 120%;
+  	margin: 2% 2% 2% 2%;
+  }
+
+
+ .home-div{
+	height: 300px;
+	font-size: 110%;
+	margin-top: 0;
+	
+}
+.home-div p{
+	font-size: 90%;
+}
+
+
+
+
+#scroll-down-button {
+display: none;
+}
+
+
+
+.car{
+	height: 100px;
+	width: 20%;
+	position: relative;
+	left: 5%;
+	top: 40px;
+}
+#car-image{
+	height: 60px;
+	width: 140%;
+	position: relative;
+	left: 5%;
+	top: 300px;
+}
+
+@keyframes example {
+    0%   {left:0px; top:40px;}
+    100% { left:80%; top:40px;}
+}
+
+
+
+
+.img-container{
+	display: inline-block;
+	width: 40%;
+	font-size: 80%;
+}
+
+#lightbox img /*Larger image when photo is clicked*/{
+	width: 70%;
+	height: 300px;
+	border:solid black 10px;
+	margin: 0 auto
+}
+
+
+
+
+
+
+
+
+

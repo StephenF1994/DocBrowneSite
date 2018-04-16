@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="Emmett Brown" content="Donation page">
+    <meta name="keywords" content="Time travel, Emmett brown, Back to the future">
+    <meta name="author" content="Stephen Finegan">
+    <title>Emmett Brown, My Story</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet"> 
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">         
+    </script>
+</head>
+<body>
+
+
+
+    <div id="header">
+    <div id="title">
+    <h1><a href ="index.html">Doc Brown</a></h1>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href ="donate.html"><span class='donate-link'>Donate</a></li>
+            <li><a href ="story.html"><span>My Story</a></li>
+            <li><a href ="gallery.html">Gallery</a></li>
+            <li><a href ="contact.html">Contact</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+    <div id="scroll-down-button">
+    <h2 class="main-heading">How did I get here?</h2>
+    <p>Click the button below to find out more about me</p>
+    <button id="btnscroll" class="story-button">Time Travel</button>
+    </div>
+		
+	<div class="Box" id="firstBox">
+
+	<h2 class="main-heading">1985</h2>
+	
+	<p>
+    After a botched experiment my friend Marty was thrown back into the 1950s. 
+    </p>
+	
+
+
+
+
+    <div id ="test1" class="car"><img src="images/delorean-3.png" id="car-image"></div>
+    <button onclick= "test(+1)" id="btn1" class="story-button">Time Travel</button>
+	</div>
+
+	<div class="Box" id="box2">
+	<h1>1955</h1>
+	<p>
+    After traveling through time in a modified DeLorean car, Marty encountered young versions of his parents and had to make sure that they fell in love or he would have ceased to exist. After doing this, Marty needed to return to the 1980's and save me from being killed.
+    </p>
+    
+
+	<div id ="test2" class="car"><img src="images/delorean-3.png" id="car-image"></div>
+    <button onclick= "test(+1)" id="btn2" class="story-button">Time Travel</button>
+	</div>
+	
+
+	<div class="Box">
+	<h1>2015</h1>
+	<p>Soon after Marty returns to 1985, I picked him and his girlfriend up and travelled to the year 2015.  Marty's job was to pose as his own son to prevent him from being thrown in prison. Unfortunately, things just got worse when the future changed the present.</p>
+	<div id ="test3" class="car"><img src="images/delorean-3.png" id="car-image"></div>
+    <button onclick= "test(+1)"  class="story-button">Time Travel</button>
+	</div>
+	
+
+	<div class="Box">
+	<h1>1885</h1>
+    <p>After being struck by a bolt of lightning, the Delorean brought me back to 1885. I managed to get word to Marty, who was trapped in 1955 where the Delorean was hidden.
+    Marty came back to help me and using the time travelling technology I returned Marty home safe to his own time.
+	 </p>
+	<div id ="test4" class="car"><img src="images/delorean-3.png" id="car-image"></div>
+    <button onclick= "test(+1)"  class="story-button">Time Travel</button>
+	</div>
+	
+	<div class="Box">
+    <p>Once again i've managed to become stranded in time. Please help me to rebuild the time machine and return home.
+    
+    
+   
+    <button onclick= "reset()"  class="story-button">Back to start</button>
+    </div>
+    
+    
+<div id="footer-story">
+        <p>Stephen Finegan 2018<br> Dublin institute of design</p>
+    </div>
+    
+
+	
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+/**$(document).ready(function () {
+    var $test1 = $('#test1');
+	$(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c)* 3);
+
+        var position = (scrollPercent * ($(document).width() - $test1.width()));
+
+        $test1.css({
+            'left': position
+        });
+    });
+
+    });**/
+
+var myVar;
+
+function test(n) {
+    myVar = setTimeout(alertFunc, 2000, n);
+
+}
+function alertFunc(n) {
+ plusDivs(n);
+  }
+
+function reset(){
+    location.reload();
+}
+
+$(document).ready(function () {
+	
+    var $button1 = $('#btn1');
+    var $test1 = $('#test1');
+   
+	$button1.click(function () {
+		
+        $test1.toggleClass("car-animate");
+    
+    });
+    });
+
+
+
+
+$(document).ready(function () {
+var $button2 = $('#btn2');
+    var $test2 = $('#test2');
+   
+    $button2.click(function () {
+        
+        $test2.toggleClass("car-animate");
+    
+    });
+    });
+
+$(document).ready(function () {
+    var $button3 = $('#btn3');
+    var $test3 = $('#test3');
+   
+    $button3.click(function () {
+        
+        $test3.toggleClass("car-animate");
+    
+    });
+    });
+
+
+$(document).ready(function () {
+var $button4 = $('#btn4'
+    );
+    var $test4= $('#test4');
+   
+    $button4.click(function () {
+        
+        $test4.toggleClass("car-animate");
+        $('.car').stop();
+    
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+
+
+$("#btnscroll").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#footer-story").offset().top
+    }, 2000);
+});
+
+/**
+
+
+
+
+
+
+$(document).ready(function () {
+	
+    var $test2 = $('#test2');
+   
+	$(window).scroll(function () {
+		if($(this).scrollTop() > 1300)
+        $test2.animate({left: '800px'}, $(this).scrollTop() > 4000);
+    });
+    });
+
+
+
+
+
+$(document).ready(function () {
+	
+    var $test3 = $('#test3');
+   
+	$(window).scroll(function () {
+		if($(this).scrollTop() > 2200)
+        $test3.animate({left: '800px'}, $(this).scrollTop() > 4000);
+    });
+    });
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+	
+    var $test4 = $('#test4');
+   
+	$(window).scroll(function () {
+		if($(this).scrollTop() > 2700)
+        $test4.attr('class', 'car-left-drive', $(this).scrollTop() > 4000);
+    });
+    });
+
+
+
+/**
+
+    var $test3 = $('#test3');
+	$(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c)* 3);
+
+        var position = (scrollPercent * ($(document).width() - $test3.width()));
+
+        $test3.css({
+            'left': position
+        });
+    });
+
+
+
+    var $test4 = $('#test4');
+	$(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c)* 3);
+
+        var position = (scrollPercent * ($(document).width() - $test4.width()));
+
+        $test4.css({
+            'left': position
+        });
+    });
+**/
+
+var timeIndex = 1;			//Setting both counters to 1
+showDivs(timeIndex);
+
+
+
+
+
+function plusDivs(n) {	
+showDivs(timeIndex += n);		//When one of the buttons are pressed
+    //showDivs(timeIndex += n);	//Either add or subtract n from counters and launch the functions to show slide and year
+   
+
+
+    
+}
+
+function showDivs(n) {
+    var i;
+    console.log(n);
+    var x = document.getElementsByClassName("Box"); //Get the pages
+
+    
+    if (n > x.length) {timeIndex = 1}   //if n is more than the amont of pages we know it has reached the end so set it back to 1
+    if (n < 1) {timeIndex = x.length}; //if it is 0 we know user has gone back from page 1 so set slideindex to last page.
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";		//Hide slides until it reaches the end
+}
+     x[timeIndex-1].style.display = "block"; //Show the user selected page
+}
+
+
+</script>
