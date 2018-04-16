@@ -378,13 +378,14 @@ text-align: center;
 
 #overlay-one{
 	position: relative;
-	top: -303px;
+	top: -305px;
 	text-align: center;
     width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
     background-color: rgba(0,0,0,0.7);
     z-index: 1;
+   
     
 }
 
@@ -425,7 +426,7 @@ text-align: center;
 
 #overlay-four{
 	position: relative;
-	top: -303px;
+	top: -306px;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
@@ -439,7 +440,7 @@ text-align: center;
 
 #overlay-five{
 	position: relative;
-	top: -303px;
+	top: -306px;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
@@ -453,7 +454,7 @@ text-align: center;
 
 #overlay-six{
 	position: relative;
-	top: -303px;
+	top: -306px;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
@@ -610,7 +611,7 @@ margin-right: 20%;
 	margin-top: 5%;
 	position: relative;
 	right: 27%;
-	
+
 }
 
 #footer-donate{
