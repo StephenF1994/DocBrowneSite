@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="Emmett Brown" content="Donation page">
@@ -20,7 +20,7 @@
 
 	<div id="nav">
 		<ul>
-			<li><a href ="donate.html"><span class='donate-link'>Donate</a></li>
+			<li><a href ="donate.html"><span class='donate-link'>Donate</span></a></li>
 			<li><a href ="story.html">My Story</a></li>
 			<li><a href ="gallery.html">Gallery</a></li>
 			<li><a href ="contact.html"><span>Contact</span></a></li>
@@ -32,9 +32,10 @@
 	<div id="contact-box">
 		<h2>Contact me</h2>
 		<p>If you would like to help or get more information please don't hesitate to contact me</p>
+		
 	</div>
 
-
+<div id="contact-container">
 	<div id="message">
 <form>
   First name:<br>
@@ -51,8 +52,15 @@ Enter your message
 </textarea> 
   <br><br>
   <input type="submit" value="Submit">
-</form> 
+	</form> 
 	</div>
+
+<div id="map-div">
+	<iframe id="map-control" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.523552665277!2d-81.47174623071844!3d28.473976026601456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77edfac4210bd%3A0x1adc62268ae9b19!2sUniversal+Orlando+Resort!5e0!3m2!1sen!2sie!4v1524507114022" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div>
+
+</div>
 
 
 <div id="footer-contact">
@@ -64,14 +72,4 @@ Enter your message
 
 
 
-<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("map"),mapProp);
-}
-</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk1My6iXEFdNSkVxLjRicdk7FLaxFm-Ms&callback=myMap"></script>
