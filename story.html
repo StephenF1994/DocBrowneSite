@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
     <meta name="Emmett Brown" content="Donation page">
@@ -119,7 +119,6 @@
 <script type="text/javascript">
 	
 
-
 var myVar;
 
 function test(n) {
@@ -211,6 +210,44 @@ $("#btnscroll").click(function() {
     }, 2000);
 });
 
+
+
+
+
+
+
+
+
+
+var timeIndex = 1;			//Setting both counters to 1
+showDivs(timeIndex);
+
+
+
+
+
+function plusDivs(n) {	
+showDivs(timeIndex += n);		//When one of the buttons are pressed
+    //showDivs(timeIndex += n);	//Either add or subtract n from counters and launch the functions to show slide and year
+   
+
+
+    
+}
+
+function showDivs(n) {
+    var i;
+    console.log(n);
+    var x = document.getElementsByClassName("Box"); //Get the pages
+
+    
+    if (n > x.length) {timeIndex = 1}   //if n is more than the amont of pages we know it has reached the end so set it back to 1
+    if (n < 1) {timeIndex = x.length}; //if it is 0 we know user has gone back from page 1 so set slideindex to last page.
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";		//Hide slides until it reaches the end
+}
+     x[timeIndex-1].style.display = "block"; //Show the user selected page
+}
 
 
 </script>
