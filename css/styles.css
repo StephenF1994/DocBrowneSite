@@ -9,29 +9,22 @@ html, body{
     margin: 0;
     color: #4D4D4D;
     line-height: 130%;
-
-    
-
-    
 }
 
 @font-face {
        font-family: BoldFont;
        src: url('Source_Code_Pro/SourceCodePro-Bold.ttf');
-       
-   }
+     }
 
 @font-face {
        font-family: lightFont;
        src: url('Source_Code_Pro/SourceCodePro-Light.ttf');
-       
-   }
+      }
 
  @font-face {
        font-family: regFont;
        src: url('Source_Code_Pro/SourceCodePro-Regular.ttf');
-       
-   }
+      }
 
 
 ul {
@@ -50,6 +43,10 @@ li{
  	text-decoration: none;
  	color: #707070
  }
+ a:hover{
+ 	
+ 	font-family: boldFont;
+ }
  p{
  	font-family: regFont;
  }
@@ -66,12 +63,15 @@ button{
 
 }
 
-
 span{
-	font-family: boldFont;
+
+	text-decoration: underline;
 }
+
+
 .donate-link{
 	color: #00C34B;
+	text-decoration: none;
 
 }
 
@@ -81,28 +81,27 @@ line-height: 120%;
 font-size: 400%;
 }
 
-/* index page */
-/* Name Heading top of all pages*/
 
-#header{
+
+#header{						/*Container for title and nav*/
 	height: 100px;
 	font-family: lightFont
 
 
 }
 
-
-
-#title{
+#title{								/*Container for title*/
 	background-color: white;
 	float: left;
 	margin-left: 10%;
 	padding-top: 2%;
 	font-family: lightFont;
+
+
+
+
 }
-#title h1{
-	
-	
+#title h1{							/*Heading in top left*/		
 	font-size: 200%;
 	
 }
@@ -120,11 +119,10 @@ font-size: 400%;
 
  .nav-button{
  	width: 5%;
- 	
  	margin: 0 47% 8% 47%;
  }
 
-#container{
+#container{					/*Upper container on home page*/
 	width: 80%;
 	margin: 0 auto;
 	background-color: white;
@@ -132,7 +130,6 @@ font-size: 400%;
 }
 
 /*	Intro to the site*/
-
 #index-introduction{
 	width: 100%;
 	height: 400px;
@@ -142,29 +139,26 @@ font-size: 400%;
  	clear: both;
 	width: 40%;
 	margin:0 auto;
-	
 	font-weight: 900;
 	text-align: center;
 	padding-top: 10%;
 }
 
 
-#description{
-	float: left;
-	width: 20%;
-	font-family: regFont;
-	opacity: 0.8;
-	position: relative;
-	font-size: 120%;
-	top: 110px;
+#video-container{
+	margin-top: 10%;
+	
 }
 
+#lower{
+	display: block;
+	width: 100%;
+}
 
+/*social media*/
 #media{
-	float: right;
-	position: relative;
-	height: 50px;
-	top: 110px;
+	margin: 0 auto;
+	margin-top: 22%;
 }
 #media img{
 	height: 50px;
@@ -174,7 +168,7 @@ font-size: 400%;
 	clear: both;
 	border-top: solid 1px #42f4a1;
 	position: relative;
-	top: 240px;
+	top: 120px;
 }
 
 
@@ -208,7 +202,7 @@ margin-bottom: 3%;
 
 
 
-.Box{
+.Box{							/*Container of story*/
 	text-align: center;
 	height: 500px;
 	margin-bottom: 20px;
@@ -235,7 +229,7 @@ margin-bottom: 3%;
 }
 
 .car{
-	height: 100px;
+	height: 50px;
 	width: 10%;
 	position: relative;
 	left: 5%;
@@ -293,13 +287,11 @@ margin-bottom: 3%;
 	grid-template-columns:1fr 1fr 1fr; /* 2 images are displayed on each row of equal width(2fr) They are seperated with a gutter half their size.(1fr)*/
 	grid-template-rows:300px 300px;
 	overflow: hidden;
-	
 }
 
 .Gallery-menu{
 	width: 100%;
 	height: 300px;
-
 }
 
 #gallery-img-one{
@@ -376,14 +368,14 @@ text-align: center;
 
 
 
-#overlay-one{
+#overlay-one{				/*Overlays on images in gallery*/
 	position: relative;
 	top: -305px;
 	text-align: center;
     width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     z-index: 1;
    
     
@@ -402,7 +394,7 @@ text-align: center;
     width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     
 }
 #overlay-two:hover{
@@ -416,7 +408,7 @@ text-align: center;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     
 }
 #overlay-three:hover{
@@ -430,7 +422,7 @@ text-align: center;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     
 }
 #overlay-four:hover{
@@ -444,7 +436,7 @@ text-align: center;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     
 }
 #overlay-five:hover{
@@ -458,7 +450,7 @@ text-align: center;
      width: 100%;
     height: 300px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.);
     
 }
 #overlay-six:hover{
@@ -522,12 +514,34 @@ text-align: center;
 #contact-box p{
 	font-size: 100%;
 }
+
+#contact-container{
+	width: 100%;
+
+}
+
 #message{
+	float: left;
+	width: 35%;
+	margin-top: 7%;
+	margin-left: 10%;
+	margin-bottom: 10%;
 	
-	width: 40%;
-	
-	margin: 05% auto;
 	font-family: regFont;
+}
+
+#map-div{
+	width: 35%;
+	float: right;
+	margin-top: 7%;
+	margin-right: 10%;
+	
+	margin-bottom: 10%;
+
+}
+
+#map-control{
+	width: 100%;
 }
 
 input[type=text]{
@@ -561,65 +575,8 @@ textarea{
 	text-align: center;
 }
 
-#billing{
-width: 25%;
-float: left;
-margin-left: 20%;
-padding-right: 2.5%;
-padding-left: 2.5%;
-background-color: #C9C9C9;
 
 
-}
-
-#card{
-width: 25%;
-float: right;
-margin-right: 20%;
- padding-left: 2.5%;
- padding-right: 2.5%;
- background-color: #C9C9C9;
- height: 282px;
-
-}
-#card-num{
-	float: left;
-	width: 70%;
-	margin: 0;
-}
-#visa{
-	float: right;
-	height: 37px;
-	margin: 0;
-
-}
-#payment-form{
-	margin: 5% 10% 5% 10%;
-	
-	
-}
-
-#submit{
-	background-color: #00C34B;
-	border-radius: 10px;
-	border:none;
-	height: 50px;
-	width: 120px;
-	color: white;
-	font-size: 120%;
-	box-shadow: none;
-	margin-top: 5%;
-	position: relative;
-	right: 27%;
-
-}
-
-#footer-donate{
-	clear: both;
-	border-top: solid 1px #42f4a1;
-	position: relative;
-	top: 570px;
-}
 
 input[type=text]{
 	border-radius: 5px;
@@ -627,94 +584,129 @@ input[type=text]{
 }
 
 
-@media only screen and (max-width: 900px) {
-  
 
 
-#index-header h1{
-font-size: 150%;
-
-  }
-
-#nav a{
-  	font-size: 75%;
-  	margin-bottom: 0;
-  }
 
 
-#doc-img{
-	display: none;
+#payment-form{
+	width: 100%;
+	margin:  5% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 950px) {
+
+
+
+
+#header{
+	height: 100px;
+	font-family: lightFont
+}
+
+#title{
+	background-color: white;
+	width: 100%;
+	padding-top: 2%;
+	font-family: lightFont;
+	margin: 0;
+}
+#title h1{
+	
+	text-align: center;
+	font-size: 100%;
+	
+}
+
+/* navigation on all pages*/
+#nav{
+ 	
+ 	padding-top: 2%;
+ 	background-color: white;
+ 	width: 100%;
+ 	margin-bottom: 5%;
+ 	margin-right: 0.5%;
+ 	
+ }
+
+ li{
+ 	font-size: 88%;
+ }
+
+ 
+
+.main-heading{
+font-family: boldFont;
+line-height: 120%;
+font-size: 100%;
+margin: 10% 0 10% 0;
+text-align: center;
 }
 
 #intro-text{
-  	width: 80%;
-  	font-size: 120%;
-  	margin: 2% 2% 2% 2%;
-  }
+	margin: 0 auto;
+}
 
-
- .home-div{
+#index-introduction{
 	height: 300px;
-	font-size: 110%;
-	margin-top: 0;
+}
+
+#description{
+	
+	width: 100%;
+	font-family: regFont;
+	opacity: 0.8;
+	position: relative;
+	top: 40%;
+	font-size: 80%;
 	
 }
-.home-div p{
-	font-size: 90%;
+
+
+#media{
+	
+	
+	width: 100%;
 }
-
-
-
-
-#scroll-down-button {
-display: none;
-font-family: regFont;
+#media img{
+	height: 50px;
+	margin: 0 auto;
+	
 }
-
-
-
-.car{
+footer{
 	height: 100px;
-	width: 20%;
-	position: relative;
-	left: 5%;
-	top: 40px;
-}
-#car-image{
-	height: 60px;
-	width: 140%;
-	position: relative;
-	left: 5%;
-	top: 300px;
-}
-
-@keyframes example {
-    0%   {left:0px; top:40px;}
-    100% { left:80%; top:40px;}
 }
 
 
 
 
-.img-container{
-	display: inline-block;
-	width: 40%;
-	font-size: 80%;
-}
-
-#lightbox img /*Larger image when photo is clicked*/{
-	width: 70%;
-	height: 300px;
-	border:solid black 10px;
-	margin: 0 auto
-}
-
-
-#learn-more{
-	font-size: 120%;
-	margin-bottom: 5%;
-	font-family: regFont;
-}
 #gallery{
 	width: 100%;
 	background-color: white;
@@ -725,7 +717,11 @@ font-family: regFont;
 	
 }
 
+.Gallery-menu{
+	width: 100%;
+	height: 300px;
 
+}
 
 #gallery-img-one{
 
@@ -768,10 +764,202 @@ text-align: center;
 
 }
 
+.car{
+	height: 100px;
+	width: 10%;
+	position: relative;
+	left: 5%;
+	top: 300px;
 }
+
+
+.car-image{
+	display: none
+}
+
+}
+
+#payment-form{
+	width: 100%;
+}
+
 @media only screen and (max-width: 650px) {
 
-	#gallery{
+.car-image{
+	display: none
+}
+	
+
+#header{
+	height: 100px;
+	font-family: lightFont
+}
+
+#title{
+	background-color: white;
+	width: 100%;
+	padding-top: 2%;
+	font-family: lightFont;
+	margin: 0;
+}
+#title h1{
+	
+	text-align: center;
+	font-size: 100%;
+	
+}
+
+/* navigation on all pages*/
+#nav{
+ 	
+ 	padding-top: 2%;
+ 	background-color: white;
+ 	width: 100%;
+ 	margin-bottom: 5%;
+ 	margin-right: 0.5%;
+ 	
+ }
+
+ li{
+ 	font-size: 88%;
+ }
+
+ 
+
+.main-heading{
+font-family: boldFont;
+line-height: 120%;
+font-size: 100%;
+margin: 10% 0 10% 0;
+text-align: center;
+}
+
+#intro-text{
+	margin: 0 auto;
+}
+
+#index-introduction{
+	height: 300px;
+}
+
+#description{
+	
+	width: 100%;
+	font-family: regFont;
+	opacity: 0.8;
+	position: relative;
+	top: 40%;
+	font-size: 80%;
+	
+}
+
+
+#media{
+	
+	
+	width: 100%;
+}
+#media img{
+	height: 50px;
+	margin: 0 auto;
+	
+}
+footer{
+	height: 100px;
+}
+
+
+
+#scroll-down-button{
+	clear: both;
+	font-family: boldFont;
+	margin-top: 8%;
+	
+}
+
+
+.Box{
+	text-align: center;
+	height: 400px;
+	margin-bottom: 10px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	margin-top: 2%;
+}
+
+
+.story-button{
+	height: 50px;
+	width: 150px;
+	font-family: regFont;
+	font-size: 60%;
+	margin-top: 5%;
+
+
+	
+	margin-bottom: 5%; 
+
+	}
+.car-animate{
+	width: 100px;
+    height: 100px;
+    
+    position: relative;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+
+.story-button{
+	height: 40px;
+	width: 80px;
+	font-family: regFont;
+
+	margin-top: 0;
+	margin-bottom: 0; 
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes example {
+    0%   {left:0px; top: -35%;;}
+    100% { left:80%; top: -35%;;}
+}
+
+#footer-story{
+	
+	position: absolute;
+	top: 900px;
+	width: 100%;
+	margin-top: 2%;
+	border-top: solid 1px #42f4a1;
+}
+
+
+
+
+
+
+
+
+
+
+#gallery{
 	width: 100%;
 	background-color: white;
 	display: grid;
@@ -782,6 +970,11 @@ text-align: center;
 }
 
 
+
+
+#learn-more{
+	display: none;
+}
 
 #gallery-img-one{
 
@@ -819,7 +1012,7 @@ text-align: center;
 }
 
 #gallery-img-six{
-grid-row:12 / 13;
+grid-row:11 / 12;
 grid-column:1 / 2 ;
 text-align: center;
 
@@ -828,7 +1021,7 @@ text-align: center;
 grid-row:2 /  3;
 grid-column:1 / 2 ;
 text-align: center;
-font-family: regFont;
+
 }
 
 #mobile-descr-2{
@@ -852,7 +1045,7 @@ grid-column:1 / 2 ;
 text-align: center;
 }
 #mobile-descr-16{
-	grid-row:13 /  14;
+	grid-row:12 /  13;
 
 grid-column:1 / 2 ;
 text-align: center;
@@ -861,10 +1054,56 @@ text-align: center;
 
 	
 	
+#contact-box{
+	clear: both;
+	width: 80%;
+	margin: 5% 10% 5% 10%;
+	
+	text-align: center;
+	font-family: boldFont;
+	
+} 
 
+#contact-box h2{
+	font-size: 140%;
+}
 
+#contact-box p{
+	font-size: 100%;
+}
 
+#contact-container{
+	width: 100%;
+
+}
+#message{
+	
+	width: 80%;
+	margin-top: 7%;
+	
+	margin-bottom: 10%;
+	
+	font-family: regFont;
+}
+#map-div{
+	width: 80%;
+	float: right;
+	margin-top: 7%;
+	margin-right: 10%;
+	
+	margin-bottom: 10%;
 
 }
 
+#map-control{
+	width: 100%;
+	height: 300px;
+}
+
+}
+
+payment-form{
+	width: 100%;
+	margin:  5% 0;
+}
 
