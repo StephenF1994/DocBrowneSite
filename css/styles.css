@@ -542,6 +542,8 @@ text-align: center;
 
 #map-control{
 	width: 100%;
+	frameborder:0;
+	border:0;
 }
 
 input[type=text]{

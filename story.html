@@ -93,31 +93,8 @@
     
 
 	
-
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script type="text/javascript">
-	
+    
 
 var myVar;
 
@@ -134,12 +111,12 @@ function reset(){
 }
 
 $(document).ready(function () {
-	
+    
     var $button1 = $('#btn1');
     var $test1 = $('#test1');
    
-	$button1.click(function () {
-		
+    $button1.click(function () {
+        
         $test1.toggleClass("car-animate");
     
     });
@@ -219,16 +196,16 @@ $("#btnscroll").click(function() {
 
 
 
-var timeIndex = 1;			//Setting both counters to 1
+var timeIndex = 1;          //Setting both counters to 1
 showDivs(timeIndex);
 
 
 
 
 
-function plusDivs(n) {	
-showDivs(timeIndex += n);		//When one of the buttons are pressed
-    //showDivs(timeIndex += n);	//Either add or subtract n from counters and launch the functions to show slide and year
+function plusDivs(n) {  
+showDivs(timeIndex += n);       //When one of the buttons are pressed
+    //showDivs(timeIndex += n); //Either add or subtract n from counters and launch the functions to show slide and year
    
 
 
@@ -244,10 +221,31 @@ function showDivs(n) {
     if (n > x.length) {timeIndex = 1}   //if n is more than the amont of pages we know it has reached the end so set it back to 1
     if (n < 1) {timeIndex = x.length}; //if it is 0 we know user has gone back from page 1 so set slideindex to last page.
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";		//Hide slides until it reaches the end
+        x[i].style.display = "none";        //Hide slides until it reaches the end
 }
      x[timeIndex-1].style.display = "block"; //Show the user selected page
 }
 
 
 </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
